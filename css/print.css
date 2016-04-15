@@ -1,0 +1,43 @@
+body {
+    font-family: monospace, arial;
+    font-size: 15px;
+}
+
+.btn {
+    display: none;
+}
+
+.dotted {
+    border-bottom: 2px dotted black;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.total_price {
+    color: #111;
+    text-align: center;
+}
+
+.total_price span {
+    color: #111;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close {
+    display: none;
+}
+
+.akwia_mess {
+    color: #999 !important;
+    display: block;
+    font-size: 10px !important;
+    padding: 20px 0;
+    text-align: center;
+}

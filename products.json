@@ -1,0 +1,295 @@
+[
+    {
+        "id": 1,
+        "cat_name": "Суші",
+        "cat_description": "История возникновения суши берёт начало в Южной Азии, где варёный рис стали применять для приготовления и консервации рыбы. Очищенная и разрезанная на небольшие кусочки рыба посыпалась солью и смешивалась с рисом, после чего помещалась под пресс из камней, который через несколько недель заменялся крышкой. В течение нескольких месяцев происходил процесс молочнокислой ферментации риса и рыбы, благодаря чему рыба оставалась годной к употреблению в течение года. Рис, который превращался в клееобразную массу с неприятным запахом, выбрасывался или использовался для приготовления новой партии рыбы. Приблизительно в VII веке через Китай и Таиланд этот способ консервации получил распространение в Японии.",
+        "code_name": "sushi",
+        "items": [
+            {
+                "id": "234234",
+                "name": "Сяке маки (с лососем)",
+                "deskription": "",
+                "prise": 34.00,
+                "url": "http://wasabi.kr.ua/image/cache/data/klass.rol/%D0%A1%D1%8F%D0%BA%D0%B5_%D0%BC%D0%B0%D0%BA%D0%B8-236x300.jpg",
+                "promo": true
+                },
+            {
+                "id": "776534535",
+                "name": "Калифорния",
+                "deskription": "",
+                "prise": 43.00,
+                "url": "http://wasabi.kr.ua/image/cache/data/slog-roll/california-236x300.jpg",
+                "promo": true
+                },
+            {
+                "id": "34",
+                "name": "Филадельфия с яблоком",
+                "deskription": "Діарея забезпечена",
+                "prise": 70.00,
+                "url": "http://wasabi.kr.ua/image/cache/data/slog-roll/filadelfia-236x300.jpg",
+                "promo": true
+                },
+            {
+                "id": "3342344",
+                "name": "Сет 'Амазонка'",
+                "deskription": "Ролл с копченым лососем - 1 шт. ( 8 кус.) Ролл 'Киото' ( лосось,сыр плавленный,огурец,аво",
+                "prise": 395.00,
+                "url": "http://www.yaposhka.kh.ua/wp-content/uploads/2011/04/83-300x213.png",
+                "promo": true
+                },
+            {
+                "id": "42333454",
+                "name": "Сет 'Сахара'",
+                "deskription": "Ролл \"День ночь\" ( лосось,сыр плавленый,огурец,сыр Хохланд) - 1 шт.( 6 кус.) Ролл 'Золото'",
+                "prise": 299.00,
+                "url": "http://www.yaposhka.kh.ua/wp-content/uploads/2011/04/83-300x213.png",
+                "promo": true
+                },
+            {
+                "id": "23531",
+                "name": "Сет 'Сакура'",
+                "deskription": "Ролл 'День ночь' ( лосось,сыр плавленый,огурец,сыр Хохланд) - 1 шт.( 6 кус.) Ролл 'Золото'",
+                "prise": 299.00,
+                "url": "http://www.yaposhka.kh.ua/wp-content/uploads/2011/04/83-300x213.png",
+                "promo": true
+                },
+            {
+                "id": "7533",
+                "name": "Сет 'Симпай'",
+                "deskription": "Ролл 'День ночь' ( лосось,сыр плавленый,огурец,сыр Хохланд) - 1 шт.( 6 кус.) Ролл 'Золото'",
+                "prise": 299.00,
+                "url": "http://zr.kh.ua/image/cache/data/%D0%93%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5%20%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0/24-188x178.jpg",
+                "promo": false
+                }
+        ]
+
+
+    },
+    {
+        "id": 18,
+        "cat_name": "Теплі страви",
+        "cat_description": "Буде гаряче наче в ліжку",
+        "code_name": "hot_ija",
+        "items": [
+            {
+                "id": "4572457457",
+                "name": "Картофель 'По деревенски'",
+                "deskription": "",
+                "prise": 28.00,
+                "url": "http://zr.kh.ua/image/cache/data/test1/artofel-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "4245745745734",
+                "name": "Лосось карри",
+                "deskription": "",
+                "prise": 94.00,
+                "url": "http://zr.kh.ua/image/cache/data/%D0%93%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5%20%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0/xr-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "4243523434",
+                "name": "Печень куриная с рисом",
+                "deskription": "",
+                "prise": 55.00,
+                "url": "http://zr.kh.ua/image/cache/data/logs/pecen-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "45745725",
+                "name": "Свинина карри",
+                "deskription": "",
+                "prise": 65.00,
+                "url": "http://zr.kh.ua/image/cache/data/%D0%93%D0%BE%D1%80%D1%8F%D1%87%D0%B8%D0%B5%20%D0%B1%D0%BB%D1%8E%D0%B4%D0%B0/xr-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "2344554354",
+                "name": "Утиная грудка под ягодным соусом",
+                "deskription": "",
+                "prise": 60.00,
+                "url": "http://zr.kh.ua/image/cache/data/onas/goryachie/utinaya%20grudka-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "22436333346",
+                "name": "Картофель фри",
+                "deskription": "",
+                "prise": 30.00,
+                "url": "http://zr.kh.ua/image/cache/data/onas/goryachie/kartofel-180x180.jpg",
+                "promo": false
+  }
+        ]
+
+
+    },
+    {
+        "id": 1834,
+        "cat_name": "Итальянская кухня",
+        "cat_description": "я не перке по испаньйола но текст повиннен бути",
+        "code_name": "ispanjola",
+        "items": [
+            {
+                "id": "3443",
+                "name": "Крем-суп Пратайоло",
+                "deskription": "Крем-суп грибной со сливками",
+                "prise": 59.00,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/krem-sup-prataojlo_2.png",
+                "promo": false
+  },
+            {
+                "id": "654",
+                "name": "Паста Болоньезе",
+                "deskription": "Домашняя паста, мясной соус «Bolognese», пармезан, базилик, соус «Pomodoro»",
+                "prise": 69.00,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/pasta-boloneze_1.png",
+                "promo": true
+  },
+            {
+                "id": "453455535",
+                "name": "Итальянский хлеб",
+                "deskription": "Ржаной десертный хлеб с семечками, орехами, курагой и черносливом, классический пшеничный хлеб с сыром и плоские хлебцы «Фокачча».",
+                "prise": 19.00,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/italyanskij-hleb.png",
+                "promo": false
+  }, {
+                "id": "55444354",
+                "name": "Итальянский хлеб (не свіжий)",
+                "deskription": "Ржаной десертный хлеб (не свіжий) с семечками, орехами, курагой и черносливом, классический пшеничный хлеб (не свіжий) с сыром и плоские хлебцы «Фокачча».",
+                "prise": 9.00,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/italyanskij-hleb.png",
+                "promo": true
+  }
+        ]
+
+
+    },
+    {
+        "id": 95,
+        "cat_name": "Спайси",
+        "cat_description": "Якийсь текст про спайси, блабла бла рибка лорем іпсум",
+        "code_name": "spaces",
+        "items": [
+            {
+                "id": "2345234554435345",
+                "name": "Спайс микс ( лосось,тунец)",
+                "deskription": "",
+                "prise": 18.00,
+                "url": "http://zr.kh.ua/image/cache/data/spais/Product-spajsi-miks-losos-tunec-10grn-50-180x180.jpg",
+                "promo": false
+  }, {
+                "id": "64",
+                "name": "Тори Унаги",
+                "deskription": "Суши с запеченным куриным филе, копченым угрем, икрой тобико.",
+                "prise": 19,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/susi-tori-unagi_1.png",
+                "promo": false
+  }, {
+                "id": "6434",
+                "name": "Унаги",
+                "deskription": "Суши с копченым угрем. ",
+                "prise": 28,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/sushi-unagi.png",
+                "promo": false
+  }, {
+                "id": "643",
+                "name": "Вакамэ сарада ",
+                "deskription": "Вакамэ сарада ",
+                "prise": 11,
+                "url": "http://mafia.ua/static/shop_images/ItemEntity/small_image/vakame-sarada.png",
+                "promo": false
+  },
+            {
+                "id": "6436346",
+                "name": "Спайс с сыром филадельфия и угрем",
+                "deskription": "",
+                "prise": 21.00,
+                "url": "http://zr.kh.ua/image/cache/data/spais/ugor-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "34343434",
+                "name": "Спайс курица с ананасом",
+                "deskription": "",
+                "prise": 10.00,
+                "url": "http://zr.kh.ua/image/cache/data/spais/yu-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "666346346",
+                "name": "Спайс с икрой корюшки",
+                "deskription": "",
+                "prise": 12.00,
+                "url": "http://zr.kh.ua/image/cache/data/spais/Product-spajsi-s-ikroj-korjushki-14grn-50-180x180.jpg",
+                "promo": false
+  }
+        ]
+
+
+    }, {
+        "id": 52,
+        "cat_name": "Напої",
+        "cat_description": "Пий аж доки не зголоднієш, вигідні умови лише у нас",
+        "code_name": "napoi",
+        "items": [
+            {
+                "id": "2342346",
+                "name": "Coca Cola ( 1 литр)",
+                "deskription": "",
+                "prise": 18.00,
+                "url": "http://zr.kh.ua/image/cache/data/Product-koka-kola-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "34666346346",
+                "name": "Нести ( 1 литр)",
+                "deskription": "",
+                "prise": 18.00,
+                "url": "http://zr.kh.ua/image/cache/data/napitki/c-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "2346234462346",
+                "name": "Сок Апельсин",
+                "deskription": "",
+                "prise": 23.00,
+                "url": "http://zr.kh.ua/image/cache/data/napitki/orang-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "634236423462346",
+                "name": "Фанта 1 литр",
+                "deskription": "",
+                "prise": 18.00,
+                "url": "http://zr.kh.ua/image/cache/data/napitki/xxx-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "235234523452345",
+                "name": "Сок Вишня",
+                "deskription": "",
+                "prise": 23.00,
+                "url": "http://zr.kh.ua/image/cache/data/napitki/vichnya-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "453234534245",
+                "name": "Живчик в ассортименте",
+                "deskription": "",
+                "prise": 15.00,
+                "url": "http://zr.kh.ua/image/cache/data/napitki/a-180x180.jpg",
+                "promo": false
+  },
+            {
+                "id": "27525745",
+                "name": "Живчик в ассортименте",
+                "deskription": "",
+                "prise": 15.00,
+                "url": "http://zr.kh.ua/image/cache/data/napitki/a-180x180.jpg",
+                "promo": false
+  }
+        ]
+
+
+    }
+]

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+
+<head>
+    <title>Маленька Крамничка</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+
+    <script src="js/angular.js"></script>
+
+    <script>
+        angular.module("exampleApp", [])
+            .controller("my_priseCtrl", function ($scope, $http) {
+
+                $http.get("products.json")
+                    .success(function (response) {
+                        $scope.items = response;
+                    });
+
+                $scope.fillti = ""
+                $scope.sortie = "-prise"
+                $scope.geettti = function (ssss) {
+                    $scope.fillti = ssss;
+                }
+
+                $scope.navbarCollapsed = true;
+                $scope.cart = [];
+                $scope.skidka = ""
+                $scope.economia = ""
+
+                $scope.totalPrise = function () {
+                    $scope.totalPriseCena = 0;
+                    for (var i = 0; i < $scope.cart.length; i++) {
+                        $scope.totalPriseCena += parseFloat($scope.cart[i].summa);
+                        if ($scope.totalPriseCena >= 1000) {
+                            var tpc = $scope.totalPriseCena;
+                            var procent = tpc * 10 / 100;
+                            $scope.skidka = tpc - procent;
+                            $scope.economia = Math.floor(tpc - $scope.skidka);
+                        }
+                    }
+
+                };
+
+                $scope.removeFromCart = function (index) {
+                    console.log(index)
+                    $scope.cart.splice(index, 1);
+                    $scope.totalPrise();
+                }
+                $scope.sendCart = function (el_cart) {
+                    for (var i = 0; i < $scope.cart.length; i++) {
+                        if (el_cart.id == $scope.cart[i].id) {
+                            $scope.cart[i].count++;
+                            $scope.cart[i].summa = $scope.cart[i].count * parseFloat($scope.cart[i].prise);
+                            $scope.totalPrise();
+                            return;
+                        }
+                    }
+                    el_cart.count = 1;
+                    el_cart.summa = (el_cart.count * parseFloat(el_cart.prise));
+                    $scope.cart.push(el_cart);
+                    $scope.totalPrise();
+                }
+
+
+                $scope.printIt = function () {
+                    var printContents = document.getElementById("printArea").innerHTML;
+                    var height = document.getElementById("zakaz").offsetHeight;
+                    var width = document.getElementById("zakaz").offsetWidth;
+                    console.log(height)
+                    console.log(width)
+                    var popupWin = window.open('', '_blank', 'width=' + width + ',height=' + height + 100);
+                    popupWin.document.open();
+                    popupWin.document.write('<html><head><link rel="stylesheet" type="text/css" href="css/print.css" /></head><body onload="window.print()">' + printContents + '</body></html>');
+                    popupWin.document.close();
+                };
+            });
+    </script>
+</head>
+
+<body ng-controller="my_priseCtrl">
+    <div class="bg_blur"></div>
+
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Маленька Крамничка</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" collapse="navbarCollapsed">
+                <ul class="nav navbar-nav">
+                    <li class="" ng-click="fillti = ''">
+                        <a href="#">Усі</a>
+                    </li>
+                    <li ng-repeat="(key, value) in items" ng-click="geettti(value.cat_name)">
+                        <a>{{value.cat_name}}</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="badge">{{cart.length}}</span></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="col-sm-12 clearfix">
+
+        <div class="row">
+
+            <div class="kush_section " ng-class="cart.length > 0 ? 'col-sm-9' : 'col-sm-12'">
+                <div class="container">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default" ng-click="sortie = '-prise'"><i class="fa fa-arrow-down" aria-hidden="true"></i>Більша ціна</button>
+                        <button type="button" class="btn btn-default" ng-click="sortie = 'prise'"><i class="fa fa-arrow-up" aria-hidden="true"></i> Меньша ціна</button>
+                    </div>
+                    <div class="col-sm-12 categories" id="{{categories.code_name}}" ng-repeat="(name_cat, categories) in items | filter: fillti ">
+                        <div class="cat_info">
+                            <h2>{{categories.cat_name}}</h2>
+                            <h4>{{categories.cat_description}}</h4>
+                        </div>
+                        <div class="col-sm-4" ng-repeat="elements in categories.items | orderBy: sortie">
+                            <div class="menu_elem clearfix">
+                                <div class="menu_el_photo col-sm-12 no-padding">
+                                    <div ng-if="elements.promo" class="promo">Увага, Ціна знижена!</div>
+                                    <img class="" src="{{elements.url}}" />
+                                </div>
+                                <div class="menu_el_info col-sm-12">
+                                    <h3>{{elements.name}}</h3>
+                                    <p class="menu_el_desc">{{elements.deskription}}</p>
+                                    <p class="prise">Ціна <span>{{elements.prise}} грн</span></p>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary" ng-click="sendCart(elements)"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Замовити</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="cart.length > 0" class="col-sm-3">
+                <div class="check" id="printArea">
+                    <div class="zakaz" id="zakaz">
+                        <div ng-repeat="cart_el in cart track by $index">
+                            <p class="text-left dotted">{{$index + 1}}. {{cart_el.name}}
+                                <span class="pull-right closes" ng-click="removeFromCart($index)">
+                                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                </span>
+                            </p>
+                            <p class="text-right">{{cart_el.prise}} грн x {{cart_el.count}}</p>
+                            <p class="text-right" ng-if="cart_el.summa != cart_el.prise"><span>{{cart_el.summa}} грн</span></p>
+
+
+                        </div>
+                        <div class="total_price">
+                            <p>Загальна сума: <span>{{totalPriseCena}}</span> Грн</p>
+                            <span class="akwia_mess">Увага! При покупці більш ніж на 1000грн, у Вас буде знижка у 10%</span>
+                            <p ng-if="skidka">Ціна з знижкою сума: <span>{{skidka}}</span> Грн</p>
+                            <p>Економія: <span>{{economia}}</span> Грн</p>
+
+                            <button class="btn btn-success" ng-click="printIt()"><i class="fa fa-print" aria-hidden="true"></i>Роздрукувати</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

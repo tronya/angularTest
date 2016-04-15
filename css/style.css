@@ -1,0 +1,146 @@
+.bg_blur {
+    background: rgba(0, 0, 0, 0) url("http://tarotclub.ru/assets/images/2012/Laboratori/7709ae454d3c.jpg") repeat scroll 0 0 / cover;
+    filter: blur(18px);
+    -webkit-filter: blur(18px);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: scale(1.3);
+    width: 100%;
+    z-index: -1;
+}
+
+.menu_el_photo {
+    height: 200px;
+    text-align: center;
+}
+
+.menu_el_photo img {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.menu_elem {
+    background: white none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 17px black;
+    box-sizing: border-box;
+    margin: 20px 0;
+    min-height: 230px;
+    overflow: hidden;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.closes {
+    color: black;
+    font-size: 15px;
+}
+
+h2 {
+    border-bottom: 2px solid;
+    color: #faad5a;
+    font-weight: bold;
+    text-shadow: 1px 2px 5px black;
+}
+
+.promo {
+    background: #faad5a none repeat scroll 0 0;
+    box-sizing: border-box;
+    color: white;
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    text-shadow: 1px 1px 3px black;
+    top: 10px;
+}
+
+.prise.lmsr {
+    color: red;
+    text-decoration: line-through;
+}
+
+.prise {
+    color: green;
+    font-size: 20px;
+    text-align: right;
+    text-shadow: 5px 8px 2px #999;
+}
+
+.fa {
+    margin: 0 10px;
+}
+
+p span {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.check {
+    background: white none repeat scroll 0 0;
+    box-sizing: border-box;
+    max-height: calc(100% - 60px);
+    overflow: auto;
+    padding: 40px 20px;
+    position: fixed;
+    top: 60px;
+    width: initial;
+}
+
+.dotted {
+    border-bottom: 2px dotted black;
+}
+
+.total_price span {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.total_price {
+    text-align: right;
+}
+
+[class*="col-"] {
+    transition: 0.3s;
+}
+
+.kush_section {
+    background: rgba(0, 0, 0, 0) url("http://watatsumi.com.ua/wp-content/themes/musica/images/bg-footer/bg04.png") repeat scroll 0 0;
+    padding: 60px 20px;
+}
+
+h3 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+}
+
+h4 {
+    color: #faad5a;
+    font-size: 14px;
+}
+
+.menu_el_info {
+    padding-bottom: 20px;
+}
+
+.akwia_mess {
+    color: #999 !important;
+    display: block;
+    font-size: 10px !important;
+    padding: 20px 0;
+    text-align: center;
+}
